@@ -131,7 +131,7 @@ const Signs = ({ model, font, largeSignModel }) => {
       </mesh>
       <mesh rotation={[0, 0, 0]} position={[-20, 20, -15]}>
         <textBufferGeometry attach="geometry" args={["Contact", textOptions]} />
-        <meshBasicMaterial attach="material" color="#fff" metalness={1} />
+        <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
       </mesh>
     </>
   );

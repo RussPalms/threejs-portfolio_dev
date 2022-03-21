@@ -6,15 +6,22 @@ import React, { useRef } from "react";
 
 export default function Model({ pos, tree }) {
   const group = useRef();
-  const { nodes, materials } = tree;
+  const { nodes } = tree;
   return (
     <group ref={group} position={pos} dispose={null}>
       <mesh
         geometry={nodes.tree.geometry}
-        material={materials["Material_1019.001"]}
         rotation={[-1.54, 0, 0]}
         scale={Math.random() + 0.7}
-      />
+      >
+        <meshStandardMaterial
+          color="#178517"
+          attach="material"
+          opacity={1}
+          roughness={1}
+          metalness={0}
+        />
+      </mesh>
     </group>
   );
 }

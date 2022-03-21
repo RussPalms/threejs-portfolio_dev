@@ -8,10 +8,10 @@ const Path = ({ position, castShadow, path }) => {
       castShadow={castShadow}
     >
       <meshStandardMaterial
-        color="#aaa"
+        color="#a8a8a8"
         roughness={1}
         metalness={0}
-        opacity={0.8}
+        opacity={1}
       />
     </mesh>
   );

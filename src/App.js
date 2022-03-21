@@ -6,7 +6,7 @@ import Scene from "./Body";
 // import Sky from "./Setup/Sky";
 import Lights from "./Setup/Lights";
 import Particles from "react-particles-js";
-import { Loader, Preload, Stars } from "@react-three/drei";
+import { Loader, Preload } from "@react-three/drei";
 //
 //
 const App = () => {
@@ -106,20 +106,29 @@ const App = () => {
         id="canvas"
         // shadows
       >
-        <fog attach="fog" args={["#0d1a26", 70, 120]} />
-
+        {/* <fog attach="fog" args={["#fff", 130, 400]} /> */}
+        <ambientLight intensity={0.2} />
         <Suspense fallback={null}>
           <Scene />
           <Preload all />
         </Suspense>
-        <Stars
-          radius={160}
-          depth={50}
-          count={5000}
-          factor={4}
-          saturation={0}
-          fade
-        />
+        {/* {day ? (
+          <Sky
+            distance={450000}
+            sunPosition={[0, 1, 0]}
+            inclination={0}
+            azimuth={0.25}
+          />
+        ) : (
+          <Stars
+            radius={160}
+            depth={50}
+            count={5000}
+            factor={4}
+            saturation={0}
+            fade
+          />
+        )} */}
 
         <Lights />
       </Canvas>

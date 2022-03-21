@@ -10,7 +10,7 @@ const Skills = ({ icons, font }) => {
     <group>
       <mesh rotation={[0, Math.PI, 0]} position={[-80, 0, 120]}>
         <textBufferGeometry attach="geometry" args={["Skills", textOptions]} />
-        <meshStandardMaterial attach="material" color="#fafafa" metalness={1} />
+        <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
       </mesh>
       {/*React*/}
       <Skill icon={icons[0]} position={[-80, 5, 40]} scale={[7, 7, 1]} />

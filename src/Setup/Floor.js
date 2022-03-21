@@ -5,9 +5,9 @@ const Floor = () => {
     <mesh rotation={[-Math.PI / 2, 0, 0]}>
       <planeBufferGeometry args={[400, 400]} />
       <meshStandardMaterial
-        color="#80e93d"
+        color="#84db4d"
         attach="material"
-        opacity={0.8}
+        opacity={1}
         roughness={1}
         metalness={0}
       />

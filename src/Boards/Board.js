@@ -23,7 +23,7 @@ const Board = ({
         position={[0, 15, (text.length / 2) * 3.2]}
       >
         <textBufferGeometry attach="geometry" args={[text, textOptions]} />
-        <meshBasicMaterial attach="material" color="#fff" metalness={0.5} />
+        <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
       </mesh>
 
       {model && <primitive object={model.scene} />}

@@ -72,7 +72,7 @@ const CameraControls = ({ icon, squidDoll }) => {
   let prevTime = 0;
   const velocity = new Vector3();
   const direction = new Vector3();
-
+  console.log(controlsRef);
   const onKeyDown = function (event) {
     if (!startGame) {
       switch (event.code) {
