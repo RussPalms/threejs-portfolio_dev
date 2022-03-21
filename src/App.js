@@ -31,7 +31,7 @@ const App = () => {
                 marginBottom: "50px",
               }}
             >
-              I'm a full-stack Web Developer.
+              I'm a Full Stack Web Developer.
             </h2>
           </Bounce>
           {window.innerWidth > 767 ? (
