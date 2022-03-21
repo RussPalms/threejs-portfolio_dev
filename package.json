@@ -2,7 +2,7 @@
   "name": "portfolio2.0",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://VinayMatta63.github.io",
+  "homepage": "https://vinaymatta63.github.io",
   "dependencies": {
     "@react-three/drei": "^7.0.1",
     "@react-three/fiber": "^7.0.1",
